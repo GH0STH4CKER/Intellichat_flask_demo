@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify, render_template
-from flask_cors import CORS
-import json,os
+#from flask_cors import CORS
+import json
 import random
 import wikipedia
 import re
@@ -8,10 +8,9 @@ import time
 import numpy as np
 import nltk
 from nltk.stem import WordNetLemmatizer
-os.environ["JOBLIB_MULTIPROCESSING"] = "0"
 from joblib import load
 app = Flask(__name__)
-CORS(app)
+#CORS(app)
 
 # Load intents data from JSON file
 intents = json.loads(open('intents.json').read())
