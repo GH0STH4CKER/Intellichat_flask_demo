@@ -8,6 +8,9 @@ import time
 import numpy as np
 import nltk
 from nltk.stem import WordNetLemmatizer
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.preprocessing import LabelEncoder
+from sklearn.naive_bayes import MultinomialNB
 import joblib
 
 app = Flask(__name__)
