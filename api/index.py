@@ -95,12 +95,12 @@ def chatbot_response(text):
     res = get_response(ints, intents)
     return res"""
 
-@app.route('/chat', methods=['POST'])
+@app.route('/chat')
 def chat():
     #user_text = request.form['user_input']
     bot_response = chatbot_response(user_text)
     return jsonify({'response': bot_response})
 
-@app.route('/', methods=['POST'])
+@app.route('/')
 def greet():
     return 'Hi!'
