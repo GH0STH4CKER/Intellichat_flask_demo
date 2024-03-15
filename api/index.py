@@ -12,8 +12,6 @@ from joblib import load, Parallel, delayed
 app = Flask(__name__)
 #CORS(app)
 
-# Load intents data from JSON file
-#intents = json.loads(open('intents.json').read())
 intents = {
   "intents": [
     {
