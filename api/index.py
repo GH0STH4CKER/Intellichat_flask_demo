@@ -1,9 +1,3 @@
-import warnings
-
-# Filter out specific UserWarning from joblib
-warnings.filterwarnings("ignore", message="[Errno 38] Function not implemented.", category=UserWarning)
-
-
 from flask import Flask, request, jsonify, render_template
 #from flask_cors import CORS
 import json
@@ -14,7 +8,7 @@ import time
 import numpy as np
 import nltk
 from nltk.stem import WordNetLemmatizer
-from joblib import load
+from joblib import load, Parallel, delayed
 app = Flask(__name__)
 #CORS(app)
 
