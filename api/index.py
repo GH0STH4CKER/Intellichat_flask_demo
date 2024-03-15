@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify, render_template
-#from flask_cors import CORS
+from flask_cors import CORS
 import json
 import random
 import wikipedia
@@ -8,11 +8,14 @@ import time
 import numpy as np
 import nltk
 from nltk.stem import WordNetLemmatizer
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.preprocessing import LabelEncoder
+from sklearn.naive_bayes import MultinomialNB
 import joblib
 
 app = Flask(__name__)
-#CORS(app)
-"""
+CORS(app)
+
 # Load intents data from JSON file
 intents = json.loads(open('intents.json').read())
 
@@ -93,14 +96,10 @@ def search_wikipedia(question, num_sentences=2):
 def chatbot_response(text):
     ints = predict_class(text)
     res = get_response(ints, intents)
-    return res"""
+    return res
 
-@app.route('/chat')
+@app.route('/chat', methods=['POST'])
 def chat():
-    #user_text = request.form['user_input']
+    user_text = request.form['user_input']
     bot_response = chatbot_response(user_text)
     return jsonify({'response': bot_response})
-
-@app.route('/')
-def greet():
-    return 'Hi!'
