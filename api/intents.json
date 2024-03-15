@@ -1,0 +1,104 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Hey", "How are you?"],
+      "responses": [
+        "Hello! How can I assist you?", 
+        "Hi there! How can I help you today?", 
+        "Hey! What can I do for you?", 
+        "Hi! Welcome to IntelliChat. How may I help?", 
+        "Hello! Nice to meet you. How may I assist?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "Goodbye", "See you later"],
+      "responses": [
+        "Goodbye! Have a great day.", 
+        "See you later!", 
+        "Farewell! Take care.", 
+        "Bye bye! Come back soon.", 
+        "Goodbye! Don't hesitate to return if you need assistance."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "Appreciate it"],
+      "responses": [
+        "You're welcome!", 
+        "No problem, happy to help!", 
+        "Anytime!", 
+        "Glad I could assist!", 
+        "You're most welcome!"
+      ]
+    },
+    {
+      "tag": "age",
+      "patterns": ["How old are you?", "What's your age?"],
+      "responses": [
+        "I'm just a computer program, so I don't have an age.", 
+        "Age is just a number for me!", 
+        "I don't age, I just get updated.", 
+        "I'm timeless!", 
+        "I'm ageless, like a timeless piece of software."
+      ]
+    },
+    {
+      "tag": "weather",
+      "patterns": ["What's the weather like?", "How's the weather today?"],
+      "responses": [
+        "You can check the weather forecast online or on your phone.", 
+        "I'm not a meteorologist, but you can find weather updates online.", 
+        "I'm afraid I can't provide real-time weather updates. Try a weather app!", 
+        "I don't have a weather forecast feature, but I can help with other queries.", 
+        "Weather conditions vary by location. You might want to check a weather website."
+      ]
+    },
+    {
+      "tag": "joke",
+      "patterns": ["Tell me a joke", "Do you know any jokes?"],
+      "responses": [
+        "Why don't scientists trust atoms? Because they make up everything!", 
+        "What do you call fake spaghetti? An impasta!", 
+        "Why did the scarecrow win an award? Because he was outstanding in his field!", 
+        "Why couldn't the bicycle stand up by itself? It was two-tired!", 
+        "What's orange and sounds like a parrot? A carrot!"
+      ]
+    },
+    {
+      "tag": "identity",
+      "patterns": ["Who are you?", "What are you?", "Tell me about yourself", "What's your purpose?", "Who created you?"],
+      "responses": [
+        "I'm IntelliChat, a virtual assistant designed to help you with your questions and tasks.", 
+        "I'm IntelliChat, an AI-powered chatbot programmed to provide assistance and information.", 
+        "I'm IntelliChat, your friendly neighborhood chatbot here to assist you!", 
+        "I'm IntelliChat, a digital assistant created to make your life easier.", 
+        "I'm IntelliChat, a conversational agent designed to engage with users and provide helpful responses."
+      ]
+    },
+    {
+      "tag": "technology",
+      "patterns": ["What technology are you built with?", "How do you work?", "What's your underlying technology?", "What programming language are you written in?"],
+      "responses": [
+        "I'm built using natural language processing (NLP) techniques and machine learning algorithms.", 
+        "I use artificial intelligence (AI) to understand and respond to user queries.", 
+        "My underlying technology includes deep learning models and neural networks.", 
+        "I'm programmed using Python and utilize libraries like TensorFlow and NLTK.", 
+        "I leverage advanced algorithms to analyze text data and generate responses."
+      ]
+    },
+    {
+      "tag": "capabilities",
+      "patterns": ["What can you do?", "What are your abilities?", "What tasks can you perform?", "How can you assist me?"],
+      "responses": [
+        "I can provide information on a wide range of topics, answer questions, and assist with tasks.", 
+        "I'm capable of understanding natural language queries and providing relevant responses.", 
+        "I can help you with tasks such as finding information, making recommendations, and providing support.", 
+        "I'm designed to assist users by providing accurate and helpful responses to their queries.", 
+        "My capabilities include answering questions, providing recommendations, and offering support."
+      ]
+    }
+    
+  ]
+}
