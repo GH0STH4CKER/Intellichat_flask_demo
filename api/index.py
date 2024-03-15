@@ -1,3 +1,9 @@
+import warnings
+
+# Filter out specific UserWarning from joblib
+warnings.filterwarnings("ignore", message="[Errno 38] Function not implemented.", category=UserWarning)
+
+
 from flask import Flask, request, jsonify, render_template
 #from flask_cors import CORS
 import json
@@ -99,6 +105,3 @@ def chat():
     user_text = request.form['user_input']
     bot_response = chatbot_response(user_text)
     return jsonify({'response': bot_response})
-
-if __name__ == '__main__':
-    app.run()
