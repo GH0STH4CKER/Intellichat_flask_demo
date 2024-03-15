@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify, render_template
+"""
 from flask_cors import CORS
 import json
 import random
@@ -93,6 +94,7 @@ def chatbot_response(text):
     ints = predict_class(text)
     res = get_response(ints, intents)
     return res
+"""
 
 @app.route('/chat', methods=['POST'])
 def chat():
