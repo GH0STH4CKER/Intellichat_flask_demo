@@ -97,7 +97,10 @@ def chatbot_response(text):
     ints = predict_class(text)
     res = get_response(ints, intents)
     return res
-
+    
+@app.route('/')
+def home():
+    return '<h1>Hello</h1>'
 @app.route('/chat', methods=['POST'])
 def chat():
     user_text = request.form['user_input']
