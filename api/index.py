@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify, render_template
 #from flask_cors import CORS
-import json
+import json,os
 import random
 import wikipedia
 import re
@@ -8,6 +8,7 @@ import time
 import numpy as np
 import nltk
 from nltk.stem import WordNetLemmatizer
+os.environ["JOBLIB_MULTIPROCESSING"] = "0"
 import joblib
 
 app = Flask(__name__)
