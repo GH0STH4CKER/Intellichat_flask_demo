@@ -4,13 +4,9 @@ import json
 import random
 import wikipedia
 import re
-import time
 import numpy as np
 import nltk
 from nltk.stem import WordNetLemmatizer
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.preprocessing import LabelEncoder
-from sklearn.naive_bayes import MultinomialNB
 import joblib
 
 app = Flask(__name__)
@@ -100,6 +96,7 @@ def chatbot_response(text):
 
 @app.route('/chat', methods=['POST'])
 def chat():
-    user_text = request.form['user_input']
-    bot_response = chatbot_response(user_text)
-    return jsonify({'response': bot_response})
+    #user_text = request.form['user_input']
+    #bot_response = chatbot_response(user_text)
+    #return jsonify({'response': bot_response})
+    return "hi"
