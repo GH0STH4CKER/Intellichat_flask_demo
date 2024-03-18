@@ -13,12 +13,12 @@ app = Flask(__name__)
 #CORS(app)
 
 # Load intents data from JSON file
-intents = json.loads(open('intents.json').read())
+intents = json.loads(open('/var/task/api/intents.json').read())
 
 # Load preprocessed data
-words = load('words.pkl')
-classes = load('classes.pkl')
-nb_classifier = load('nb_classifier.joblib')
+words = load('/var/task/api/words.pkl')
+classes = load('/var/task/api/classes.pkl')
+nb_classifier = load('/var/task/api/nb_classifier.joblib')
 
 lemmatizer = WordNetLemmatizer()
 
